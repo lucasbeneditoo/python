@@ -19,14 +19,20 @@ def conferir_float_usuario(mensagem):
 
 while True:
     print("1 - Somar")
+
     print("2 - Subtrair")
+    
     print("3 - Multiplicar")
+    
     print("4 - Dividir")
+    
     print("0 - Sair")
+    
     print()
 
     while True:
         escolha = conferir_int_usuario("Escolha uma opção: ")
+
         if escolha in (1, 2, 3, 4, 0):
             break
 
@@ -94,4 +100,5 @@ while True:
 
     elif escolha == 0:
         print("Você saiu do programa.")
+        
         break
