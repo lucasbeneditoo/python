@@ -34,5 +34,5 @@ async def roll(ctx):
     await ctx.send("...")
     await asyncio.sleep(0.5)
     await ctx.send(f"Caiu no número {dado}!")
-
+    
 bot.run(TOKEN)
