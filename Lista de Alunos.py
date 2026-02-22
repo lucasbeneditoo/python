@@ -20,7 +20,7 @@ while True:
         else:
             print("Valor inválido! Tente novamente\n")
 
-    if(escolha == 1):
+    if escolha == 1:
         nome = input("Digite o nome do aluno: ")
 
         while True:
@@ -37,25 +37,25 @@ while True:
 
         print("\nLista atualizada com sucesso!\n")
 
-    elif(escolha == 2):
+    elif escolha == 2:
         print(", ".join(alunos), " ", sep=". \n")
 
-    elif(escolha == 3):
+    elif escolha == 3:
         for nome, nota in alunos.items():
             if nota > 5.9:
                 print(f"Nome: {nome.strip().title()} | Nota: {nota:g}.\n")
 
-    elif(escolha == 4):
+    elif escolha == 4:
         media = sum(alunos.values()) / len(alunos)
         arredondado = round(media, 2)
         print(f"A media da turma é {arredondado:g}.\n")
 
-    elif(escolha == 5):
+    elif escolha == 5:
         busca = input("Escreva o nome de aluno para ver sua nota: ")
         for nome, nota in alunos.items():
             if nome.lower() == busca.lower().strip():
                 print(f"\nNota de aluno {nome} é {nota:g}.\n")
 
-    elif(escolha == 0):
+    elif escolha == 0:
         print("Você saiu do programa!")
         break
