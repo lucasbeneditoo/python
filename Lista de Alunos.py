@@ -1,5 +1,5 @@
-
 alunos = {}
+
 while True:
     print("Bem vindo a lista de alunos!\n")
     print("1 - Adicionar aluno\n")
